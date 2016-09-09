@@ -5,6 +5,7 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+
 @Entity
 public class Stock implements Serializable {
 
@@ -19,9 +20,9 @@ public class Stock implements Serializable {
 	private String parentName;
 	private Type type;
 	//指数
-	private double index;
+	private double price;
 	//涨跌幅
-	private double change;
+	private double upAndDown;
 	//涨跌幅百分比
 	private double percent;
 	private Date createTime;
@@ -78,20 +79,20 @@ public class Stock implements Serializable {
 		this.type = type;
 	}
 
-	public double getIndex() {
-		return index;
+	public double getPrice() {
+		return price;
 	}
 
-	public void setIndex(double index) {
-		this.index = index;
+	public void setPrice(double price) {
+		this.price = price;
 	}
 
-	public double getChange() {
-		return change;
+	public double getUpAndDown() {
+		return upAndDown;
 	}
 
-	public void setChange(double change) {
-		this.change = change;
+	public void setUpAndDown(double upAndDown) {
+		this.upAndDown = upAndDown;
 	}
 
 	public double getPercent() {
@@ -113,8 +114,8 @@ public class Stock implements Serializable {
 	@Override
 	public String toString() {
 		return "Stock [id=" + id + ", code=" + code + ", name=" + name + ", parentCode=" + parentCode + ", parentName=" + parentName
-				+ ", type=" + type + ", index=" + index + ", change=" + change + ", percent=" + percent + ", createTime=" + createTime
-				+ "]";
+				+ ", type=" + type + ", price=" + price + ", upAndDown=" + upAndDown + ", percent=" + percent + ", createTime="
+				+ createTime + "]";
 	}
 
 }
