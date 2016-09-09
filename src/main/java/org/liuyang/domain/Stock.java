@@ -46,6 +46,9 @@ public class Stock implements Serializable {
 
 	/** 创建时间  **/
 	private Date createTime;
+	
+	/** 年 **/
+	private int year;
 
 	public enum Type {
 		ShenZhen, ShangHai
@@ -131,11 +134,19 @@ public class Stock implements Serializable {
 		this.createTime = createTime;
 	}
 
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
 	@Override
 	public String toString() {
 		return "Stock [id=" + id + ", code=" + code + ", name=" + name + ", parentCode=" + parentCode + ", parentName=" + parentName
 				+ ", type=" + type + ", price=" + price + ", upAndDown=" + upAndDown + ", percent=" + percent + ", createTime="
-				+ createTime + "]";
+				+ createTime + ", year=" + year + "]";
 	}
 
 }
