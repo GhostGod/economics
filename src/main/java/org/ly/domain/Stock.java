@@ -5,26 +5,46 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
+/**
+ * 股票
+ * @author liuyang
+ * @Email y_liu@hiersun.com | 745089707@qq.com
+ * @Date 2016年9月9日
+ */
 @Entity
 public class Stock implements Serializable {
 
 	private static final long serialVersionUID = -4656719772490139880L;
 
-	//yyyyMMdd-code
+	/**  主键，年月日-代码=yyyyMMdd-code  **/
 	@Id
 	private String id;
+	
+	/** 代码  **/
 	private String code;
+	
+	/** 名称  **/
 	private String name;
+	
+	/** 父类代码  **/
 	private String parentCode;
+
+	/** 父类名称  **/
 	private String parentName;
+	
+	/** 类型  **/
 	private Type type;
-	//指数
+	
+	/** 指数  **/
 	private double price;
-	//涨跌幅
+	
+	/** 涨跌幅  **/
 	private double upAndDown;
-	//涨跌幅百分比
+	
+	/** 涨跌幅百分比  **/
 	private double percent;
+
+	/** 创建时间  **/
 	private Date createTime;
 
 	public enum Type {
