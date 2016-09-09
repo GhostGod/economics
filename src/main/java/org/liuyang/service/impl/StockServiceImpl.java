@@ -1,10 +1,10 @@
-package org.ly.service.impl;
+package org.liuyang.service.impl;
 
 import javax.transaction.Transactional;
 
-import org.ly.domain.Stock;
-import org.ly.repository.StockRepository;
-import org.ly.service.StockService;
+import org.liuyang.domain.Stock;
+import org.liuyang.repository.StockRepository;
+import org.liuyang.service.StockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**

@@ -1,7 +1,7 @@
-package org.ly.controller;
+package org.liuyang.controller;
 
-import org.ly.domain.Stock;
-import org.ly.service.StockService;
+import org.liuyang.domain.Stock;
+import org.liuyang.service.StockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

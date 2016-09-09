@@ -1,6 +1,6 @@
-package org.ly.service;
+package org.liuyang.service;
 
-import org.ly.domain.Stock;
+import org.liuyang.domain.Stock;
 /**
  * 股票服务层接口
  * @author liuyang

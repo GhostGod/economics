@@ -1,6 +1,6 @@
-package org.ly.repository;
+package org.liuyang.repository;
 
-import org.ly.domain.Stock;
+import org.liuyang.domain.Stock;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

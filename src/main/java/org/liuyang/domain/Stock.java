@@ -1,4 +1,4 @@
-package org.ly.domain;
+package org.liuyang.domain;
 
 import java.io.Serializable;
 import java.util.Date;
